@@ -73,7 +73,7 @@ BORTUS_PROMPT_DIR="$BORTUS_HOME_DIR/prompts"
 
 ## Maintainers
 
-[@thebashpotato](https://gitlab.com/thebashpotato)
+[@thebashpotato](https://github.com/thebashpotato)
 
 ## Contributing
 
