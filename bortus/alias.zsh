@@ -34,7 +34,6 @@ if has systemctl; then
 fi
 
 # rust replacement programs
-#!/bin/zsh
 
 if has tree-rs; then
   alias tree='tree-rs'
