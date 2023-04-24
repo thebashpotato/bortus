@@ -8,13 +8,14 @@
 
 autoload -U colors && colors
 autoload -Uz compaudit compinit zrecompile && compinit
+export HISTCONTROL=ignoreboth:erasedups
 
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_CACHE_HOME="$HOME/.cache"
-export HISTCONTROL=ignoreboth:erasedups
 export EDITOR='nvim'
 export VISUAL='nvim'
+export PAGER='nvim'
 export BROWSER='firefox'
 export READER='zathura'
 
