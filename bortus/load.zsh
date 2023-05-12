@@ -11,9 +11,9 @@ BORTUS_HOME_DIR="$HOME/.config/bortus"
 # NOTE: Modules that need to be loaded
 # in order for bortus to work
 bortus_modules=(
-  "$BORTUS_HOME_DIR/bortus_config.zsh" # Always load first
+  "$BORTUS_HOME_DIR/config.zsh" # Always load first
   "$BORTUS_HOME_DIR/functions.zsh"
-  "$BORTUS_HOME_DIR/settings.zsh"
+  "$BORTUS_HOME_DIR/shell_settings.zsh"
   "$BORTUS_HOME_DIR/alias.zsh"
   "$BORTUS_HOME_DIR/history.zsh"
   "$BORTUS_HOME_DIR/completion.zsh"

@@ -4,9 +4,9 @@
 
 # NOTE: Tooling variables
 
-# BORTUS_PROMPT: Accepted values are (default, starship).
+# BORTUS_PROMPT: Accepted values are (default, starship, oh-my-posh).
 # Invalid values will be ignored and the default shell will be loaded
-BORTUS_PROMPT="starship"
+BORTUS_PROMPT="oh-my-posh"
 
 # BORTUS_REPORTING_TOOL: Accepted values are (neofetch, screenfetch, pfetch, etc)
 # Basically any terminal fetch tool will be used by name if it is found on the system.

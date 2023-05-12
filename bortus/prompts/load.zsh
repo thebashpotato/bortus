@@ -9,6 +9,13 @@ starship)
     source "$BORTUS_PROMPT_DIR/default.zsh"
   fi
   ;;
+oh-my-posh)
+  if has oh-my-posh; then
+    eval "$(oh-my-posh init zsh)"
+  else
+    source "$BORTUS_PROMPT_DIR/default.zsh"
+  fi
+  ;;
 *)
   source "$BORTUS_PROMPT_DIR/default.zsh"
   ;;
