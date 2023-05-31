@@ -79,6 +79,7 @@ function has() {
 
 # Public: Only adds a new path to the $PATH env variable
 # if it exists.
+# Automatically appends the $PATH var to the end of the $1 argument.
 function bortus_add_to_path_if_exists() {
   local _path="$1"
   [[ -z "$_path" ]] && return

@@ -13,8 +13,8 @@ export HISTCONTROL=ignoreboth:erasedups
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_CACHE_HOME="$HOME/.cache"
-export EDITOR='nvim'
-export VISUAL='nvim'
+export EDITOR='emacsclient'
+export VISUAL='emacsclient'
 if has bat; then
   export PAGER='bat'
 else
@@ -26,7 +26,6 @@ export READER='zathura'
 # NOTE: Custom ZSH User settings
 
 bortus_add_to_path_if_exists "$HOME/scripts"
-bortus_add_to_path_if_exists "$HOME/.local/bin"
 
 # for neovide
 export WINIT_UNIX_BACKEND='x11'
@@ -45,6 +44,9 @@ fi
 
 # Nvim nightly build
 bortus_add_to_path_if_exists /opt/nvim-linux64/bin
+
+# Doom emacs
+bortus_add_to_path_if_exists "$HOME/.config/emacs/bin"
 
 # Node tooling (fast node version manager)
 # Install command: curl -fsSL https://fnm.vercel.app/install | bash
