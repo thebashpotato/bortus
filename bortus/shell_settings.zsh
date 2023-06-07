@@ -32,6 +32,7 @@ fi
 
 # NOTE: Custom ZSH User settings
 bortus_add_to_path_if_exists "$HOME/scripts"
+bortus_add_to_path_if_exists "$HOME/.local/bin"
 
 # for neovide
 export WINIT_UNIX_BACKEND='x11'

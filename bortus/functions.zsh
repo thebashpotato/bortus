@@ -39,7 +39,7 @@ function load_poky_env() {
     error "Empty argument, r or t is accepted"
     return
   fi
-  local tseries_sdk="/opt/poky/4.0.4/environment-setup-cortexa9t2hf-neon-poky-linux-gnueabi"
+  local tseries_sdk="/opt/poky/4.0.4/tseries/environment-setup-cortexa9t2hf-neon-poky-linux-gnueabi"
   local rseries_sdk=""
 
   case "$_series" in
