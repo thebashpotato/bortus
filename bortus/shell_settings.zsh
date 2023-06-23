@@ -9,7 +9,6 @@
 autoload -U colors && colors
 autoload -Uz compaudit compinit zrecompile && compinit
 
-export HISTCONTROL=ignoreboth:erasedups
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_CACHE_HOME="$HOME/.cache"
@@ -31,7 +30,7 @@ if has 'zathura'; then
 fi
 
 # NOTE: Custom ZSH User settings
-bortus_add_to_path_if_exists "$HOME/scripts"
+bortus_add_to_path_if_exists "$HOME/bin"
 bortus_add_to_path_if_exists "$HOME/.local/bin"
 
 # for neovide
@@ -48,6 +47,9 @@ if [[ -d "$HOME/.cargo" ]]; then
   bortus_add_to_path_if_exists "$HOME/.cargo/bin"
   export CARGO_HOME="$HOME/.cargo"
 fi
+
+# Users home bin for personal scripts executables etc..
+bortus_add_to_path_if_exists "$HOME/bin"
 
 # Nvim nightly build
 bortus_add_to_path_if_exists '/opt/nvim-linux64/bin'

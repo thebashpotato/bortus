@@ -1,5 +1,5 @@
 #
-# XXX Define all aliases/abbreviations here
+# XXX : All aliases/abbreviations here
 #
 
 # System

@@ -3,6 +3,8 @@
 # Code comes from oh-my-zsh lib/history.zsh
 #
 
+export HISTCONTROL=ignoreboth:erasedups
+
 ## History wrapper
 function bortus_history {
   local clear list
