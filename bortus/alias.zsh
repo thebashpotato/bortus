@@ -86,6 +86,18 @@ else
   alias c='clear'
 fi
 
+# Ubuntu
+if has lsb_release; then
+  alias update='sudo apt update -y && sudo apt full-upgrade -y'
+  alias upate='sudo apt update -y && sudo apt full-upgrade -y'
+  alias updte='sudo apt update -y && sudo apt full-upgrade -y'
+  alias updqte='sudo apt update -y && sudo apt full-upgrade -y'
+
+  if has snap; then
+    alias upqll='sudo apt update -y && sudo apt full-upgrade -y && snap refresh'
+  fi
+fi
+
 # Pacman/Paru aliases
 if has pacman; then
   alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'
