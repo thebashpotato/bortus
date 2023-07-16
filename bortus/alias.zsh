@@ -44,7 +44,7 @@ if has exa; then
   alias ls='exa --sort=modified --color=always --color-scale --icons'
   alias sl='exa --sort=modified --color=always --color-scale --icons'
   alias la='exa -Ghag --sort=modified --color=always --color-scale --git --icons'
-  alias lal='exa -Ghalg --sort=modified --color=always --color-scale --git --icons'
+  alias lal='exa -al --sort=modified --color=always --color-scale --git --icons'
   alias ll='exa -Ghag --sort=modified --color=always --color-scale --git --icons'
 else
   alias l='ls --color=auto'
