@@ -86,7 +86,7 @@ else
   alias c='clear'
 fi
 
-# Ubuntu
+# Ubuntu derivatives
 if has lsb_release; then
   alias update='sudo apt update -y && sudo apt full-upgrade -y'
   alias upate='sudo apt update -y && sudo apt full-upgrade -y'
@@ -95,6 +95,10 @@ if has lsb_release; then
 
   if has snap; then
     alias upqll='sudo apt update -y && sudo apt full-upgrade -y && snap refresh'
+  fi
+
+  if has flatpak; then
+    alias upqll='sudo apt update -y && sudo apt full-upgrade -y && flatpak update -y'
   fi
 fi
 
