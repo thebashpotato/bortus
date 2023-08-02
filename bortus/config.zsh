@@ -8,9 +8,12 @@
 # Invalid values will be ignored and the default shell will be loaded
 BORTUS_PROMPT="oh-my-posh"
 
+# a using oh-my-posh, set the theme path here
+BORTUS_OH_MY_POSH_THEME="$HOME/.cache/oh-my-posh/themes/json.omp.json"
+
 # BORTUS_REPORTING_TOOL: Accepted values are (neofetch, screenfetch, pfetch, etc)
 # Basically any terminal fetch tool will be used by name if it is found on the system.
-# If you don't want to load a reporting tool then leave the variable empty
+# a you don't want to load a reporting tool then leave the variable empty
 BORTUS_REPORTING_TOOL=""
 
 # NOTE: Path variables
