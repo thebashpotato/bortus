@@ -15,7 +15,12 @@ starship)
   ;;
 oh-my-posh)
   if has oh-my-posh && [ "$SHLVL" -eq 1 ]; then
-    eval "$(oh-my-posh init zsh --config $BORTUS_OH_MY_POSH_THEME)"
+    if [ -z "$BORTUS_OH_MY_POSH_THEME" ]; then
+      eval "$(oh-my-posh init zsh)"
+    else
+      eval "$(oh-my-posh init zsh --config $BORTUS_OH_MY_POSH_THEME)"
+    fi
+
   else
     __load_default_prompt
   fi
