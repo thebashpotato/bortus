@@ -7,14 +7,14 @@ default || "" || " ")
   __load_default_prompt
   ;;
 starship)
-  if has starship && [ "$SHLVL" -eq 1 ]; then
+  if has starship; then
     eval "$(starship init zsh)"
   else
     __load_default_prompt
   fi
   ;;
 oh-my-posh)
-  if has oh-my-posh && [ "$SHLVL" -eq 1 ]; then
+  if has oh-my-posh; then
     if [ -z "$BORTUS_OH_MY_POSH_THEME" ]; then
       eval "$(oh-my-posh init zsh)"
     else
