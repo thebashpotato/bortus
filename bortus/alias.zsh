@@ -70,7 +70,7 @@ if has git; then
   alias gp='git push'
   alias gpr='git push --set-upstream-origin'
   alias gc='git commit -m'
-  alias gd='git diff | bat'
+  alias gd='git diff'
   alias gl='git log --oneline --graph'
 fi
 
