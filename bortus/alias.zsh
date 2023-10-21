@@ -2,7 +2,9 @@
 # XXX : All aliases/abbreviations here
 #
 
-# System
+########################
+# Standard System Stuff
+########################
 alias e="$EDITOR"
 alias q='exit'
 alias b='cd .. && ls'
@@ -10,7 +12,6 @@ alias cp='cp -rv'
 alias mv='mv -v'
 alias rm='rm -rf'
 alias srm='sudo rm -rf'
-alias h='htop'
 alias fix-permissions='sudo chown -R $USER:$USER ~/.config ~/.local'
 alias grep='grep --color=auto'
 alias egrep='grep -E --color=auto'
@@ -24,7 +25,9 @@ alias hw='hwinfo --short'
 alias jctl='journalctl -p 3 -xb'
 alias probe='sudo -E hw-probe -all -upload'
 
-# systemd commands
+###################
+# Systemd commands
+##################
 if has systemctl; then
   alias running_services='systemctl list-units --type=service --state=running'
   alias failed_services='systemctl list-units --type=service --state=failed'
@@ -33,12 +36,23 @@ if has systemctl; then
   alias sysfailed='systemctl list-units --failed'
 fi
 
-# rust replacement programs
+############################
+# Rust replacement programs
+############################
 
+# Rust replacement for the tree command
 if has tree-rs; then
   alias tree='tree-rs'
 fi
 
+# Rust replacement for htop
+if has btm; then
+  alias h='btm -b'
+else
+  alias h='htop'
+fi
+
+# Rust replacement for ls
 if has exa; then
   alias l='exa --sort=modified --color=always --color-scale --icons'
   alias ls='exa --sort=modified --color=always --color-scale --icons'
@@ -55,16 +69,19 @@ else
   alias ll='ls -alFh'
 fi
 
+# Rust replacement for cat
 if has bat; then
   alias cat='bat'
 fi
 
-# Search content with ripgrep
+# Rust replacement for grep
 if has rg; then
   alias rg='rg --sort path'
 fi
 
+###############
 # Git commands
+##############
 if has git; then
   alias gs='git status'
   alias gp='git push'
@@ -74,19 +91,24 @@ if has git; then
   alias gl='git log --oneline --graph'
 fi
 
+##################
 # Docker commands
+##################
 if has docker; then
   alias dil="docker image ls"
   alias dcl="docker container ls --all"
 fi
 
+# Stupid terminal shit
 if has lolcat && has sparklines; then
   alias c='clear; seq 1 $(tput cols) | sort -R | sparklines | lolcat'
 else
   alias c='clear'
 fi
 
-# Ubuntu derivatives
+###############################
+# Ubuntu Linux update aliases
+###############################
 if has lsb_release; then
   alias update='sudo apt update -y && sudo apt full-upgrade -y'
   alias upate='sudo apt update -y && sudo apt full-upgrade -y'
@@ -102,7 +124,9 @@ if has lsb_release; then
   fi
 fi
 
-# Pacman/Paru aliases
+############################
+# Arch Linux update aliases
+############################
 if has pacman; then
   alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'
   alias udpate='sudo pacman -Syyu'
@@ -127,7 +151,9 @@ if has pacman; then
   alias fix-keyserver='[ -d ~/.gnupg ] || mkdir ~/.gnupg ; cp /etc/pacman.d/gnupg/gpg.conf ~/.gnupg/ ; echo 'done''
 fi
 
+################
 # Grub commands
+###############
 if has grub-mkconfig; then
   # grub update
   alias update-grub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
@@ -136,6 +162,10 @@ if has grub-mkconfig; then
   alias ngrub='sudo $EDITOR /etc/default/grub'
   alias nconfgrub='sudo $EDITOR /boot/grub/grub.cfg'
 fi
+
+########################
+# Advanced User Aliases
+#######################
 
 # Know what you do in these files, and with these aliases
 alias nmkinitcpio='sudo $EDITOR /etc/mkinitcpio.conf'
