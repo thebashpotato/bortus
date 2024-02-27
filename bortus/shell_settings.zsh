@@ -54,9 +54,6 @@ bortus_add_to_path_if_exists "$HOME/bin"
 # Nvim nightly build
 bortus_add_to_path_if_exists '/opt/nvim-linux64/bin'
 
-# Doom emacs
-bortus_add_to_path_if_exists "$HOME/.config/emacs/bin"
-
 # Node tooling (fast node version manager)
 # Install command: curl -fsSL https://fnm.vercel.app/install | bash
 if has "$HOME/.local/share/fnm/fnm"; then
