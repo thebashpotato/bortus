@@ -42,6 +42,9 @@ export VIM_SESSIONS="$XDG_CONFIG_HOME/vim_sessions"
 # CPM package manager cache directory
 export CPM_SOURCE_CACHE="$XDG_CACHE_HOME/CPM"
 
+# Go lang
+bortus_add_to_path_if_exists "/usr/local/go/bin"
+
 # Rust tool chain
 if [[ -d "$HOME/.cargo" ]]; then
   bortus_add_to_path_if_exists "$HOME/.cargo/bin"

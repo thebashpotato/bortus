@@ -11,7 +11,7 @@ BORTUS_PROMPT="oh-my-posh"
 # a using oh-my-posh, set the theme path here
 BORTUS_OH_MY_POSH_THEME="$HOME/.cache/oh-my-posh/themes/stelbent.minimal.omp.json"
 
-# BORTUS_REPORTING_TOOL: Accepted values are (neofetch, screenfetch, pfetch, etc)
+# BORTUS_REPORTING_TOOL: Accepted values are (neofetch, screenfetch, pfetch, yarsi, etc)
 # Basically any terminal fetch tool will be used by name if it is found on the system.
 # a you don't want to load a reporting tool then leave the variable empty
 BORTUS_REPORTING_TOOL="yarsi"
