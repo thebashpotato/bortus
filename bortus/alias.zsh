@@ -5,7 +5,12 @@
 ########################
 # Standard System Stuff
 ########################
-alias e="$EDITOR"
+if has neovide; then
+  alias e='neovide --fork'
+else
+  alias e="$EDITOR"
+fi
+
 alias q='exit'
 alias b='cd .. && ls'
 alias cp='cp -rv'
