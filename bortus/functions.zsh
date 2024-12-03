@@ -119,3 +119,8 @@ function ex() {
     error "'$_file' is not a valid file"
   fi
 }
+
+function plasma_restart() {
+    kquitapp6 plasmashell
+    kstart plasmashell
+}
