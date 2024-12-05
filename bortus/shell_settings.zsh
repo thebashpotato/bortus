@@ -51,6 +51,9 @@ if [[ -d "$HOME/.cargo" ]]; then
   export CARGO_HOME="$HOME/.cargo"
 fi
 
+# Add Qml facillities for Qt/KDE development
+bortus_add_to_path_if_exists "/usr/lib/qt6/bin"
+
 # Users home bin for personal scripts executables etc..
 bortus_add_to_path_if_exists "$HOME/bin"
 
