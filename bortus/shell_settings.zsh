@@ -2,10 +2,6 @@
 # XXX: General and Custom ZSH settings are defined here
 #
 
-#
-# NOTE: General ZSH settings
-#
-
 autoload -U colors && colors
 autoload -Uz compaudit compinit zrecompile && compinit
 
@@ -32,6 +28,9 @@ fi
 # NOTE: Custom ZSH User settings
 bortus_add_to_path_if_exists "$HOME/bin"
 bortus_add_to_path_if_exists "$HOME/.local/bin"
+
+# for asdf
+bortus_add_to_path_if_exists "$HOME/.asdf/bin"
 
 # for neovide
 export WINIT_UNIX_BACKEND='x11'
