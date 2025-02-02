@@ -26,6 +26,10 @@ alias hw='hwinfo --short'
 alias jctl='journalctl -p 3 -xb'
 alias probe='sudo -E hw-probe -all -upload'
 
+if has neovide; then
+  alias ee='neovide --fork'
+fi
+
 ###################
 # Systemd commands
 ##################
