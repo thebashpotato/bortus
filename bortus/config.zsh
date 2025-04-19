@@ -9,7 +9,7 @@
 BORTUS_PROMPT="oh-my-posh"
 
 # Using oh-my-posh, set the theme path here
-BORTUS_OH_MY_POSH_THEME="$HOME/.cache/oh-my-posh/themes/json.omp.json"
+BORTUS_OH_MY_POSH_THEME="$HOME/.cache/oh-my-posh/themes/powerlevel10k_rainbow.omp.json"
 
 # BORTUS_REPORTING_TOOL: Accepted values are (neofetch, screenfetch, pfetch, yarsi, etc)
 # Basically any terminal fetch tool will be used by name if it is found on the system.

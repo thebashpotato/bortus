@@ -57,7 +57,7 @@ bortus_add_to_path_if_exists "/usr/lib/qt6/bin"
 bortus_add_to_path_if_exists "$HOME/bin"
 
 # Nvim nightly build
-bortus_add_to_path_if_exists '/opt/nvim-linux64/bin'
+bortus_add_to_path_if_exists '/opt/nvim-linux-x86_64/bin'
 
 # Node tooling (fast node version manager)
 # Install command: curl -fsSL https://fnm.vercel.app/install | bash
